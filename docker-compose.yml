@@ -6,7 +6,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./work:/home/jovyan/work
+      - ~/jupyter-data/work:/home/jovyan/work
       - app-data:/app/configs
     environment:
       - NB_UID="${UID}"
