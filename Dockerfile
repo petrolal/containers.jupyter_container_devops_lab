@@ -39,7 +39,10 @@ RUN pip install --no-cache-dir \
   awscli \
   boto3 \
   cfn-lint \
-  diagrams
+  diagrams 
+
+RUN pip install jupyterlab-myst
+RUN npm install -g @mermaid-js/mermaid-cli
 
 # AWS CDK (node - mais estável)
 RUN npm install -g aws-cdk typescript \
